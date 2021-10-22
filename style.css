@@ -1,0 +1,310 @@
+/* https://coolors.co/f3be29-eac5a2-80b7e2-e65a41-4f4c4b-7b3329-dda471 */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #EAC5A2;
+
+    align-items: center;
+}
+
+.navbar{
+    border-bottom: 2px solid #7B3329;
+    
+    position: relative; 
+}
+
+.navbar #logo{
+    float:left;
+}
+
+.navbar .links{
+    text-align: right;
+    
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.navbar .links a{
+    font-family: 'Rampart One', cursive;
+    font-size: 23px;
+    font-weight: bold;
+
+    text-decoration: none;
+    
+    padding: 30px 10px 10px 10px;
+    
+    color: #4F4C4B;
+
+}
+
+.about{
+    margin-top: 200px;
+    text-align: center;
+
+    background-color: #F3BE29;
+    
+    border: 1px solid #DDA471;
+    border-left: 10px solid #E65A41;
+    border-right: 10px solid #E65A41;
+    border-radius: 8px;
+
+    box-shadow: 0 15px 15px rgb(0 0 0 / 20%);
+
+    transition: all 0.3s;
+}
+
+.about p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    
+    color: #E65A41;
+    
+    padding: 40px 15px;
+}
+
+.about:hover{
+    transform: translate(0, -5px);
+}
+
+#about{
+
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #fa2500;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+#skills {
+    text-align: center;
+    margin-top: 30px;
+
+    font-family: 'Oswald', sans-serif;
+    color: #7B3329;
+}
+
+.skills{
+    margin-top:5%;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.skills .skillcell{
+    font-size: 30px;
+
+    border: 10px solid #d12a1a;
+    box-shadow: 0 10px 10px rgb(102, 19, 19);
+
+    width: 23%;
+    height: 150px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+
+    background-color: #7B3329;
+    transition: all 0.3s;
+}
+
+.skills .skillcell:hover{
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    transform: matrix(1.2, 0, 0, 1.2, 0, -5);
+    box-shadow: 0 10px 10px rgb(61, 15, 15);
+}
+
+.skills .skillcell p{
+    padding: 25px;
+    font-size: 30px;
+    color: #E65A41;
+}
+
+.projects{
+    margin-top:5%;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    flex-direction:row;
+}
+
+.projects .projectcell{
+    font-size: 30px;
+
+    border: 10px solid #14b437;
+    box-shadow: 0 10px 10px rgb(41, 141, 28);
+
+    width: 23%;
+    height: 150px;
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+
+    background-color: #16e442;
+    transition: all 0.5s;
+}
+
+.projects .projectcell:hover{
+
+    box-shadow: 0 10px 10px rgb(30, 182, 50);
+}
+
+.projects .projectcell p{
+    padding: 25px;
+    font-size: 30px;
+    color: #ffffff;
+    
+}
+
+.projects .projectcell p:hover{
+    font-size: 23px;
+    display:block;
+}
+
+#projectone:hover::before{
+    content:"Expands shortcuts - ";
+}
+
+#projecttwo:hover::before{
+    content:"Calculate statistics of docs - ";
+}
+
+#projectthree:hover::before{
+    content:"Pastes text and highlights keywords - ";
+}
+
+#projectfour:hover::before{
+    content:"An assitant assisting you with difficult words - ";
+}
+
+#projectfive:hover::before{
+    content:"A customized spell checker - ";
+}
+
+#projectsix:hover::before{
+    content:"Creates backup of your programs - ";
+}
+
+#projects {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #23522d;
+}
+
+#contactme{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contactme{
+    align-items: center;
+    text-align: center;
+}
+
+
+.contactme #sub{
+    margin: 22px 0;
+
+    width: 70vw;
+    max-width: 700px;
+
+    outline: none;
+    
+    border: none;
+    border-top: 8px solid #DDA471;
+    border-left: 8px solid #DDA471;
+    border-radius: 8px;
+    
+    background-color: #dfbfa3;
+    
+    box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+    
+    padding: 20px;
+    font-size: 17px;
+    
+    color: #ffffff;
+    font-weight: bold;
+    
+    font-family: 'Oswald', sans-serif;
+    
+    transition: all .3s;
+    
+}
+
+.contactme button{
+    cursor:pointer;
+    margin: 22px 0;
+
+    outline: none;
+    
+    border: none;
+    border-radius: 8px;
+    
+    background-color: #dfbfa3;
+    
+    box-shadow: inset 0 0 0 0 rgb(0 0 0 / 20%);
+
+    padding: 20px;
+    font-size: 17px;
+    
+    color: #ffffff;
+    font-weight: bold;
+    
+    font-family: 'Oswald', sans-serif;
+    
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.contactme button:hover{
+    box-shadow: inset 400px 0 0 0  #d6833a;
+}
+
+
+@media screen and (max-width:800px){
+    .skills .skillcell{
+        font-size: 20px;
+
+        margin: 15px;
+        padding: 0px;
+        display: block;
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+    .projects .projectcell{
+        font-size: 20px;
+
+        margin: 15px;
+        padding: 0px;
+        display: block;
+        flex-wrap: nowrap;
+    }
+    
+}
